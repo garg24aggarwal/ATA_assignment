@@ -22,10 +22,10 @@ from PyPDF2 import PdfReader
 app = FastAPI()
 
 # Initialize your database and OpenAI components here
-ASTRA_DB_APPLICATION_TOKEN = "AstraCS:LhaZBxXUFSRnsBgjuTxifUPY:085e6f320623eae8aff635be6fdf6e0854ad9c961f867d463add66b5ca66c3f2" # enter the "AstraCS:..." string found in in your Token JSON file
-ASTRA_DB_ID = "07a929a2-9a48-4d66-80f0-7c28c582d47c" # enter your Database ID
+ASTRA_DB_APPLICATION_TOKEN = " " # enter the "AstraCS:..." string found in in your Token JSON file
+ASTRA_DB_ID = " " # enter your Database ID
 
-OPENAI_API_KEY = "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" # enter your OpenAI key
+OPENAI_API_KEY = " " # enter your OpenAI key
 cassio.init(token=ASTRA_DB_APPLICATION_TOKEN, database_id=ASTRA_DB_ID)
 embedding = OpenAIEmbeddings(openai_api_key=OPENAI_API_KEY)
 astra_vector_store = Cassandra(
